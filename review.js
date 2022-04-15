@@ -21,13 +21,25 @@
 
 // 1.) Declare a variable
 
+// let variable = 23;
+
 // 2.) Change the value of this variable
+
+// variable = 24;
 
 // 3.) Change the data type of this variable
 
+// variable = '24';
+
 // 4.) Create another variable and the one from above to concatenate
 
+// let otherVariable = 'random word';
+// otherVariable + variable
+
 // 5.) Use any of the variables above or create new ones and print using string interpolation
+
+// otherVariable + variable
+// console.log(` We are going to print ${otehrVariable}.`)
 
 // ================ Variable Names =================
 /* 
@@ -44,68 +56,115 @@
 // Look up the following string methods!
 
 // Using charAt(), print the letter i in Sabrina
+// firstName = 'Sabrina'
+// console.log(firstName.charAt(4));
+// using charAt will give you the index
 
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
 
+// let teddyName = 'Teddy'
+// console.log(teddyname.charAt(2));
+// link of cheatSheet for unicode: https://en.wikipedia.org/wiki/List_of_Unicode_characters
+
 // Using fromCharCode() - make it readable for us :). You'll see!
 
+// console.log(String.fromCharCode(72, 97, 114, 114, 121));
+
 // Take your first and last name and concat()
+// let firstName = 'Harry ';
+// let lastName = 'Liang';
+// let fullName = firstName.concat(lastName);
+// console.log(fullName);
+
 
 // Create a string and make it return true using startsWith()
+// const string1 = 'Per Scholas'
+// console.log(string1.startsWith('Per'));
+// looks for the first word, "string"
+
 
 // Now use any variable with endsWith() and return false
+// console.log(string1.startsWith('Scholas'));
 
 // Finish the following sentence. Use includes() and return true.
-const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
+// const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
+// console.log(ozgur.includes('time'));
 
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
-let joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+// let joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+
+// console.log(joshHadALittleLambOopsCow.indexOf('cow'));
+// console.log(joshHadALittleLambOopsCow.charAt('149'));
 
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
 
-const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
+// const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
+
+// console.log(vanessa.lastIndexOf('Vanessa'));
+// console.log(vanessa.charAt(39));
 
 // Can we use length for strings? I don't know, you tell me.
 const noWeCantTeo = "but did you try it out though?"
+// console.log(nowWeCantTeo.length)
 
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
+// console.log(replaceGokuWithVegeta.replace('Goku', 'Vegeta'));
 
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
+// console.log(joshIsLookingForWifey.search('wifey'));
 
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
-const pizzaSentence = "pizza, other half of pizza"
+// const pizzaSentence = "pizza, other half of pizza"
 
-// Now using the pizza sentence, return only pizza (before the comma)
+// console.log(pizzaSentence.indexOf('other half of pizza'));
+// console.log(pizzaSentence.slice(7));
+
+// // Now using the pizza sentence, return only pizza (before the comma)
+// console.log(pizzaSentence.slice(-5));
 
 // Okay, but who decided to go to this expensive restaurant? Yaz, Poornima, and Leshawn decided to split() the bill. Return an array separating Yaz, Poornima, and Leshawn.
 const splitTheBill = "Yaz, Poornima, and Leshawn"
+// console.log(splitTheBill.split(','));
 
 // OH NO! The alien invaders from earlier were so against bill splitting so they decided to split() Yaz, Poornima, and Leshawn into pieces. Using splitTheBill, return an array separating all three by characters.
+// console.log(splitTheBill.split(''));
 
 // Use this toLowerCase()
 const angry = "LOWER YOUR VOICE DOWN IF YOU AIN'T PAYING MY BILLS."
 // Tuan was angry today. Create a string with words that Tuan would yell out. Now lowercase it, to tell Tuan to chill out. 
 
+// console.log(angry.toLocaleLowerCase());
+
 // toUpperCase()
 const jahlunSaidToPutSomeRespectToHisName = "jahlun"
+// console.log(jahlunSaidToPutSomeRespectToHisName.toUpperCase())
 
 // substring()
 // on the chopping block...
 
 // Returns "ell"
 const basicGreeting = "Hello World"
+// console.log(basicGreeting(1 , 4));
 
 // Returns "JavaScript"
 const ohReally = "JavaScript Substring"
+// console.log(ohReally.search(' Substring'))
+// console.log(ohReally.substring(0, ohReally.search(' Substring')));
+
 
 // Returns aol.com
 const aslDays = "xXteoWuzHereXx@aol.com"
 
+// console.log(aslDays.substring(aslDays.indexof('aol')));
+
 // trim()
 // If only I can use this for my love handles...
 // Create a variable with a string value with some extra loving on both sides.
+
+// let newVar1 = '        extra loving           '
+// console.log(newVar1.trim());
 
 // =================================================
 //                     BOOLEAN
@@ -120,25 +179,46 @@ const b = 10;
 const c = 15;
 const d = "Keke"
 
-// console.log(a _ b)
-// console.log(c _ b)
-// console.log(d _ d)
-// console.log(d _ a)
-// console.log(a _ 15)
-// console.log(a _ b _ c)
-// console.log(c _ b _ a _ d)
+// console.log(a < b)
+// console.log(c > b)
+// console.log(d === d)  or >=
+// console.log(d != a)
+// console.log(a <  15)
+// console.log(a + b != c)
+// console.log(c * b / a != d)
+// console.log(c - b - a !== d)
 
 // =================================================
 //                     LOOPS
 // =================================================
 
 // Ken has a headache today and he said the room has been spinning like crazy. Make Ken's room spin 10 times using FOR LOOP. Make him print a sentence.
+// for(let i = 0; i < 10; i++){
+//   console.log(`Ken's room spin 10 times`)
+// }
 
 // Harry said that was so mean of Teo to do Ken dirty like that. Make Teo's vision spin 20 times FOR LOOP.
+// for(let i = 0; i < 20; i++){
+//   console.log(`Teo's vision spin 20 times`)
+// }
 
 // But wait! Lisa said, while Teo is spinning 20 times. Let's make him say "I'm sorry". Print I'm sorry 20 times using a WHILE loop.
+// let i = 0
+// while(i < 20){
+//   console.log("I'm Sorry")
+//   i++
+// }
+
 
 // For the next three, look for the syntax of FOR IN and FOR OF loop. Very easy to understand syntax, and very clean :) 
+// for (variable in object) {
+//   statement
+// }
+
+// for (variable of iterable) {
+//   statement
+// }
+
 
 // To The Left! To The Left! Everything I want in the console to the left. Print thing1, thing2, thing 3 using (FOR IN LOOP)
 const whateverQueenBeySaid = {
@@ -177,32 +257,64 @@ const perscholas = ['Amira', 'Arely', 'Jonathan']
 const fruits = ['apple', 'banana', 'orange']
 
 // Print banana
+// console.log(fruits[1]);
 
-// Let's turn it up a notch. I won't tell you what array methods to use. 
+// Let's turn it up a notch. I won't tell you what array methods to use.
 
 // Join all the elements of the array into a string separated by a space.
+// join()
+// join(separator)
+// console.log(fruits.join(" "))
 
 // Remove orange
+// splice(start, deleteCount)
+// console.log(fruits.splice(2))
+// console.log(fruits.pop())
+// console.log(fruits)
 
 // Add strawberry, kiwi, and grapes at the end
+// push(element0, element1)
+// console.log(fruits.push("strawberry", "kiwi", "grapes"))
+// console.log(fruits)
 
 // Remove apple
+// splice(start, deleteCount)
+// console.log(fruits.splice(0,1))
+// console.log(fruits)
 
 // Add mango at the beginning of the array
+// console.log(fruits.splice(0, 0, 'mango'))
+// console.log(fruits)
 
 // Add lemon, and grapefruit between mango and banana
+// console.log(fruits.splice(1, 0, 'lemon', 'grapefruit'))
+// console.log(fruits)
 
 // Remove banana and strawberry
+// console.log(fruits.splice(3 , 2))
+// console.log(fruits)
 
 // Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
+// const array3 = array1.concat(array2);
+const exoticFruits = ['durian', 'persimmon', 'jackfruit']
+const superFruit = exoticFruits.concat(fruits);
+// console.log(superFruit);
 
 // Print the last two exotic fruits without altering the newly concatenated array.
+// console.log(superFruit.slice(1, 3));
 
 // Monalissa said she needs help re-organizing her items in alphabetical order.
 const monalissaIsMessy = ["pencil", "paper", "notebook", "computer"]
+// months.sort();
+// console.log(months);
+// monalissaIsMessy.sort();
+// console.log(monalissaIsMessy);
 
 // Kevin accidentally stepped into the mirror world and needs help reversing his words.
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
+// const reversed = array1.reverse();
+// console.log('reversed:', reversed);
+console.log(mirrorMirrorOnTheWall.reverse());
 
 // ===== HIGHER ORDER METHODS =====
 // Rafael said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
